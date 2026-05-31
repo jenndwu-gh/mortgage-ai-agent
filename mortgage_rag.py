@@ -442,7 +442,7 @@ def run_agent(applicant_id: str, pdf_path: str, collection: chromadb.Collection)
 
     while True:
         response = anthropic_client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-5",
             max_tokens=1500,
             system=SYSTEM_PROMPT,
             tools=TOOLS,
@@ -488,7 +488,7 @@ if __name__ == "__main__":
 
     # Run all three applicants
     # Update paths to your local PDF location
-    PDF_DIR = "C:/projects/tests"
+    PDF_DIR = "./sample_docs"
     run_agent("A001", f"{PDF_DIR}/bank_statement_A001.pdf", collection)
     run_agent("A002", f"{PDF_DIR}/bank_statement_A002.pdf", collection)
     run_agent("A003", f"{PDF_DIR}/bank_statement_A001.pdf", collection)  # A003 reuses A001 PDF for now
