@@ -2,7 +2,7 @@
 
 An AI-powered mortgage underwriting agent that automates pre-approval decisions using LLM reasoning, RAG-based policy lookup, and real document parsing.
 
-Built by a credit risk professional with 10+ years of Basel II/III and consumer lending experience — combining domain expertise with modern AI engineering.
+Built by a credit risk professional with 10+ years of consumer lending experience — combining domain expertise with modern AI engineering.
 
 ---
 
